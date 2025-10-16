@@ -3,6 +3,10 @@ languageCode: en-US
 title: Hugo Narrow
 theme: hugo-narrow
 
+params:
+  github: https://github.com/hainguyen1303
+  email: hairnguyen13032004@gmail.com
+
 menu:
   main:
     - name: Posts

@@ -17,6 +17,10 @@
 {{ $authorAvatar := index $author "avatar" }}
 {{ $authorSocial := index $author "social" }}
 
+{{ $githubURL := site.Params.github }}
+{{ $emailParam := site.Params.email }}
+{{ $twitterURL := site.Params.twitter }}
+
 <section class="author-section mb-12">
   <div class="bg-card border-border rounded-xl border p-8 shadow-sm">
     <div class="flex flex-col items-center gap-6 text-center md:flex-row md:items-start md:text-left">
@@ -53,8 +57,22 @@
         {{ if $authorSocial }}
           <div class="flex flex-wrap justify-center gap-3 md:justify-start">
             {{ range $authorSocial }}
+              {{ $name := lower .name }}
+              {{ $href := .url }}
+              {{ if and $githubURL (eq $name "github") }}
+                {{ $href = $githubURL }}
+              {{ end }}
+              {{ if and $emailParam (eq $name "email") }}
+                {{ $href = $emailParam }}
+                {{ if not (hasPrefix $href "mailto:") }}
+                  {{ $href = printf "mailto:%s" $href }}
+                {{ end }}
+              {{ end }}
+              {{ if and $twitterURL (eq $name "twitter") }}
+                {{ $href = $twitterURL }}
+              {{ end }}
               <a
-                href="{{ .url }}"
+                href="{{ $href }}"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="bg-muted text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"

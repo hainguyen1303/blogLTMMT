@@ -1,11 +1,11 @@
-{{ define "main" }}
-  <!-- 面包屑导航 -->
+﻿{{ define "main" }}
+  <!-- é¢åŒ…å±‘å¯¼èˆª -->
   {{ partial "navigation/breadcrumb.html" . }}
 
 
-  <!-- 文章封面 -->
+  <!-- æ–‡ç« å°é¢ -->
   {{- if .Params.cover -}}
-    {{/* 使用通用图片处理器 */}}
+    {{/* ä½¿ç”¨é€šç”¨å›¾ç‰‡å¤„ç†å™¨ */}}
     {{- partial "content/image-processor.html" (dict
       "context" .
       "src" .Params.cover
@@ -29,14 +29,14 @@
           class="h-64 w-full object-cover md:h-80"
           loading="eager"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-        <!-- 图片加载失败时的占位图 -->
+        <!-- å›¾ç‰‡åŠ è½½å¤±è´¥æ—¶çš„å ä½å›¾ -->
         <div class="{{ index $gradients $colorIndex }} relative h-64 md:h-80 w-full bg-gradient-to-br" style="display: none;">
           <div class="absolute inset-0 flex items-center justify-center">
             <div class="flex h-24 w-24 items-center justify-center rounded-full border border-white/30 bg-white/20 backdrop-blur-sm">
               <span class="text-3xl font-bold text-white">{{ substr .Title 0 1 | upper }}</span>
             </div>
           </div>
-          <!-- 装饰元素 -->
+          <!-- è£…é¥°å…ƒç´  -->
           <div class="absolute top-8 right-8 h-20 w-20 rounded-full bg-white/15"></div>
           <div class="absolute bottom-8 left-8 h-16 w-16 rounded-full bg-white/20"></div>
         </div>
@@ -45,28 +45,30 @@
   {{ end }}
 
 
-  <!-- 文章头部信息 -->
+  <!-- æ–‡ç« å¤´éƒ¨ä¿¡æ¯ -->
   <header class="mb-8">
     {{ partial "content/post-meta.html" . }}
   </header>
 
-  <!-- 文章内容 -->
+  <!-- æ–‡ç« å†…å®¹ -->
   <article class="prose prose-neutral dark:prose-invert mb-12 max-w-none">
     {{ .Content }}
   </article>
 
-  <!-- 许可证信息 -->
+  <!-- è®¸å¯è¯ä¿¡æ¯ -->
+  {{ partial "content/post-license.html" . }}
 
 
-  <!-- 上一篇/下一篇导航 -->
+  <!-- ä¸Šä¸€ç¯‡/ä¸‹ä¸€ç¯‡å¯¼èˆª -->
   {{ partial "content/post-navigation.html" . }}
 
 
-  <!-- 相关文章 -->
+  <!-- ç›¸å…³æ–‡ç«  -->
   {{ partial "content/related-posts.html" . }}
 
 
-  <!-- 评论组件 -->
+  <!-- è¯„è®ºç»„ä»¶ -->
   {{ partial "features/comments.html" . }}
 
 {{ end }}
+

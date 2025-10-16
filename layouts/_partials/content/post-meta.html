@@ -47,11 +47,10 @@
 
       <!-- 阅读时间 -->
       {{ if .ReadingTime }}
+        {{ $rt := .ReadingTime }}
         <div class="flex items-center gap-2">
           {{ partial "features/icon.html" (dict "name" "clock" "size" "sm" "ariaLabel" "Reading time") }}
-          <span
-            >{{ .ReadingTime }} minute</span
-          >
+          <span>{{ if eq $rt 1 }}1 minute{{ else }}{{ $rt }} minutes{{ end }}</span>
         </div>
       {{ end }}
 
