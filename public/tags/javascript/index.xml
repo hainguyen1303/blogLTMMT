@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Hugo Narrow</title>
+    <link>http://localhost:55074/tags/javascript/</link>
+    <description>Recent content in JavaScript on Hugo Narrow</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 16 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:55074/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu về ngôn ngữ Java – Tại sao nó vẫn quan trọng đến ngày nay</title>
+      <link>http://localhost:55074/posts/gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-ng%C3%B4n-ng%E1%BB%AF-java-t%E1%BA%A1i-sao-n%C3%B3-v%E1%BA%ABn-quan-tr%E1%BB%8Dng-%C4%91%E1%BA%BFn-ng%C3%A0y-nay/</link>
+      <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:55074/posts/gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-ng%C3%B4n-ng%E1%BB%AF-java-t%E1%BA%A1i-sao-n%C3%B3-v%E1%BA%ABn-quan-tr%E1%BB%8Dng-%C4%91%E1%BA%BFn-ng%C3%A0y-nay/</guid>
+      <description>&lt;p&gt;Java đã xuất hiện từ năm 1995 nhưng vẫn giữ vị thế vững chắc trong thế giới phát triển phần mềm hiện đại. Là một lập trình viên Việt Nam, tôi thường ví Java giống như một “người bạn lâu năm” luôn đáng tin cậy khi cần xây dựng ứng dụng bền vững, an toàn và có khả năng mở rộng cao. Trong bài viết này, chúng ta sẽ điểm lại hành trình của Java, phân tích vì sao ngôn ngữ này vẫn được các doanh nghiệp ưa chuộng, và gợi ý cách bạn có thể bắt đầu học một cách hiệu quả.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
