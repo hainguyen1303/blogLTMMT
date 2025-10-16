@@ -2,10 +2,15 @@ baseURL: https://hugo-narrow.vercel.app/
 languageCode: en-US
 title: Hugo Narrow
 theme: hugo-narrow
+buildFuture: true
 
 params:
   github: https://github.com/hainguyen1303
   email: hairnguyen13032004@gmail.com
+  author:
+    name: "Nguyễn Văn Hải"
+    subtitle1: "Blog cá nhân được viết bằng Hugo và GitHub repository."
+    subtitle2: "Đồ án môn học Lập Trình Mạng Máy Tính."
 
 menu:
   main:

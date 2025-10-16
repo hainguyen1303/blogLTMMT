@@ -6,8 +6,7 @@ description: "Giới thiệu ngắn gọn về bản thân – Nguyễn Văn H�
 
 ## 👨‍💻 Giới thiệu bản thân
 
-Xin chào! Mình là **Nguyễn Văn Hải** – sinh ngày **13/03/2004**, hiện là **sinh viên ngành Công Nghệ Thông Tin**, chuyên ngành **Mạng Máy Tính** tại  
-**Trường Đại học Công Nghệ TP.HCM (HUTECH)** 🇻🇳.
+Xin chào! Mình là **Nguyễn Văn Hải** – sinh ngày **13/03/2004**, hiện là **sinh viên ngành Công Nghệ Thông Tin**, chuyên ngành **Mạng Máy Tính** tại  **Trường Đại học Công Nghệ TP.HCM (HUTECH)**.
 
 Mình sinh sống và học tập tại **TP. Hồ Chí Minh, Việt Nam**, với niềm đam mê công nghệ, lập trình và đặc biệt là **mạng máy tính – bảo mật hệ thống**.
 

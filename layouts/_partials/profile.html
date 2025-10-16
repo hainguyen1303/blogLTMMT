@@ -1,19 +1,15 @@
-{{ $defaultSocial := slice
+﻿{{ $defaultSocial := slice
   (dict "name" "GitHub" "url" "https://github.com/username" "icon" "github")
   (dict "name" "Twitter" "url" "https://twitter.com/username" "icon" "twitter")
   (dict "name" "Email" "url" "mailto:hello@example.com" "icon" "email")
 }}
 {{ $defaultAuthor := dict
   "name" (site.Title)
-  "title" "A Clean and Minimal Hugo Theme"
-  "description" "Focused on content and user experience."
   "avatar" "/images/avatar.svg"
   "social" $defaultSocial
 }}
 {{ $author := merge $defaultAuthor (site.Params.author | default dict) }}
 {{ $authorName := default site.Title (index $author "name") }}
-{{ $authorTitle := index $author "title" }}
-{{ $authorDescription := index $author "description" }}
 {{ $authorAvatar := index $author "avatar" }}
 {{ $authorSocial := index $author "social" }}
 
@@ -42,17 +38,12 @@
           {{ $authorName }}
         </h1>
 
-        {{ if $authorTitle }}
-          <p class="text-muted-foreground mb-3 text-lg">
-            {{ $authorTitle }}
-          </p>
-        {{ end }}
-
-        {{ if $authorDescription }}
-          <p class="text-foreground mb-4 leading-relaxed">
-            {{ $authorDescription }}
-          </p>
-        {{ end }}
+{{ with site.Params.author.subtitle1 }}
+  <p class="text-muted-foreground mb-1 text-lg"><strong>{{ . }}</strong></p>
+{{ end }}
+{{ with site.Params.author.subtitle2 }}
+  <p class="text-muted-foreground mb-4 text-lg"><strong>{{ . }}</strong></p>
+{{ end }}
 
         {{ if $authorSocial }}
           <div class="flex flex-wrap justify-center gap-3 md:justify-start">
@@ -89,3 +80,6 @@
     </div>
   </div>
 </section>
+
+
+
