@@ -2,108 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo Narrow</title>
-    <link>http://localhost:55074/tags/</link>
+    <link>http://localhost:1414/tags/</link>
     <description>Recent content in Tags on Hugo Narrow</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 16 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:55074/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1414/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java</title>
-      <link>http://localhost:55074/tags/java/</link>
+      <link>http://localhost:1414/tags/java/</link>
       <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/java/</guid>
+      <guid>http://localhost:1414/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>http://localhost:55074/tags/javascript/</link>
+      <link>http://localhost:1414/tags/javascript/</link>
       <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/javascript/</guid>
+      <guid>http://localhost:1414/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Lập Trình</title>
-      <link>http://localhost:55074/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <link>http://localhost:1414/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
       <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/l%E1%BA%ADp-tr%C3%ACnh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Alert</title>
-      <link>http://localhost:55074/tags/alert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/alert/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Code</title>
-      <link>http://localhost:55074/tags/code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/code/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Image</title>
-      <link>http://localhost:55074/tags/image/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/image/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>http://localhost:55074/tags/markdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Math</title>
-      <link>http://localhost:55074/tags/math/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/math/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mermaid</title>
-      <link>http://localhost:55074/tags/mermaid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/mermaid/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prose</title>
-      <link>http://localhost:55074/tags/prose/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/prose/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rendering</title>
-      <link>http://localhost:55074/tags/rendering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/rendering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Style</title>
-      <link>http://localhost:55074/tags/style/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/style/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Syntax-Highlighting</title>
-      <link>http://localhost:55074/tags/syntax-highlighting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/syntax-highlighting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>http://localhost:55074/tags/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55074/tags/test/</guid>
+      <guid>http://localhost:1414/tags/l%E1%BA%ADp-tr%C3%ACnh/</guid>
       <description></description>
     </item>
   </channel>

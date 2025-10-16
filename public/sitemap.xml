@@ -1,32 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>http://localhost:55074/en/sitemap.xml</loc>
-    
-      <lastmod>2025-10-16T00:00:00+00:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:55074/zh-cn/sitemap.xml</loc>
-    
-      <lastmod>2025-06-01T10:00:00+08:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:55074/ja/sitemap.xml</loc>
-    
-      <lastmod>2025-06-01T10:00:00+08:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:55074/fr/sitemap.xml</loc>
-    
-      <lastmod>2025-06-01T10:00:00+08:00</lastmod>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1414/about/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/bien-ham-va-pham-vi-javascript/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/bien-kieu-du-lieu-toan-tu-java/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/dom-la-gi/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/gioi-thieu-javascript/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/gioi-thieu-ngon-ngu-java/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/tags/java/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/java-collections-co-ban/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/tags/javascript/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/tags/l%E1%BA%ADp-tr%C3%ACnh/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/lap-trinh-huong-doi-tuong-java/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/so-sanh-java-va-javascript/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/tags/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/posts/xu-ly-ngoai-le-java/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/</loc>
+    <lastmod>2023-01-01T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1414/archives/</loc>
+  </url><url>
+    <loc>http://localhost:1414/categories/</loc>
+  </url>
+</urlset>

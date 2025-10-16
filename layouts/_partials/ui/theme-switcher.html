@@ -1,22 +1,38 @@
 {{- if site.Params.showThemeSwitch | default true -}}
 
-{{- /* 准备主题菜单内容 */ -}}
-{{- $themeMenuContent := "" -}}
-{{- $themes := site.Params.themes -}}
 {{- $sortedThemes := slice -}}
-{{- range $key, $theme := $themes -}}
+{{- $hasCustomThemes := false -}}
+{{- range $key, $theme := site.Params.themes -}}
   {{- $sortedThemes = $sortedThemes | append (dict "key" $key "theme" $theme) -}}
+  {{- $hasCustomThemes = true -}}
 {{- end -}}
-{{- $sortedThemes = sort $sortedThemes "theme.order" -}}
+{{- if $hasCustomThemes -}}
+  {{- $sortedThemes = sort $sortedThemes "theme.order" -}}
+{{- else -}}
+  {{- $sortedThemes = slice
+    (dict "key" "default"   "theme" (dict "name" "Default"   "order" 1))
+    (dict "key" "claude"    "theme" (dict "name" "Claude"    "order" 2))
+    (dict "key" "bumblebee" "theme" (dict "name" "Bumblebee" "order" 3))
+    (dict "key" "emerald"   "theme" (dict "name" "Emerald"   "order" 4))
+    (dict "key" "nord"      "theme" (dict "name" "Nord"      "order" 5))
+    (dict "key" "sunset"    "theme" (dict "name" "Sunset"    "order" 6))
+    (dict "key" "abyss"     "theme" (dict "name" "Abyss"     "order" 7))
+    (dict "key" "dracula"   "theme" (dict "name" "Dracula"   "order" 8))
+    (dict "key" "amethyst"  "theme" (dict "name" "Amethyst"  "order" 9))
+    (dict "key" "slate"     "theme" (dict "name" "Slate"     "order" 10))
+    (dict "key" "twitter"   "theme" (dict "name" "Twitter"   "order" 11))
+  -}}
+{{- end -}}
+
+{{- $themeMenuContent := "" -}}
 {{- range $sortedThemes -}}
   {{- $themeMenuContent = printf "%s<button data-color-scheme=\"%s\" class=\"text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none\"><span>%s</span></button>" $themeMenuContent .key .theme.name -}}
 {{- end -}}
 
-{{- /* 使用统一的下拉菜单组件 */ -}}
 {{- partial "ui/dropdown-button.html" (dict
   "type" "color-scheme"
   "icon" "palette"
-  "ariaLabel" (i18n "theme.toggle")
+  "ariaLabel" "Toggle theme"
   "buttonId" "color-scheme-toggle"
   "dropdownId" "color-scheme-dropdown"
   "menuWidth" "w-44"

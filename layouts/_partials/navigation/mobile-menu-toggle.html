@@ -1,16 +1,16 @@
-<!-- 移动端菜单按钮 -->
+﻿<!-- ç§»åŠ¨ç«¯èœå•æŒ‰é’® -->
 <div class="relative">
   <button
     id="mobile-menu-toggle"
     class="dropdown-toggle border-border bg-background text-muted-foreground hover:bg-accent hover:text-foreground flex h-10 w-10 items-center justify-center rounded-lg border transition-colors duration-200"
     data-dropdown-type="mobile-menu"
-    aria-label="{{ i18n "nav.menu" }}"
+    aria-label="Menu"
     aria-expanded="false"
     aria-haspopup="true">
-    {{ partial "features/icon.html" (dict "name" "menu" "size" "md" "ariaLabel" (i18n "nav.menu")) }}
+    {{ partial "features/icon.html" (dict "name" "menu" "size" "md" "ariaLabel" "Menu") }}
   </button>
 
-  <!-- 移动端导航面板 -->
+  <!-- ç§»åŠ¨ç«¯å¯¼èˆªé¢æ¿ -->
   <div
     id="mobile-menu"
     class="mobile-menu dropdown-menu border-border bg-popover/95 absolute top-12 left-0 z-[60] hidden w-80 max-w-[calc(100vw-2rem)] rounded-lg border p-1 shadow-lg backdrop-blur-sm transition-all duration-200 ease-out md:hidden"
@@ -20,7 +20,7 @@
     <nav class="flex flex-col">
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
-        {{/* 生成语言感知的URL */}}
+        {{/* ç”Ÿæˆè¯­è¨€æ„ŸçŸ¥çš„URL */}}
         {{ $menuURL := .URL }}
         {{ if .PageRef }}
           {{ with site.GetPage .PageRef }}
@@ -44,7 +44,7 @@
           {{ end }}
           <span
             >{{ if hasPrefix .Name "nav." }}
-              {{ i18n .Name }}
+              {{ .Name }}
             {{ else }}
               {{ .Name }}
             {{ end }}</span

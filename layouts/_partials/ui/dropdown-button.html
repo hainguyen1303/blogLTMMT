@@ -34,11 +34,11 @@
     {{- if eq $type "theme" -}}
       <!-- 暗色模式切换按钮的多图标 -->
       <!-- 太阳图标 (亮色模式) -->
-      {{ partial "features/icon.html" (dict "name" "sun" "class" "sun-icon hidden relative z-10" "size" "md" "ariaLabel" (i18n "theme.light")) }}
+      {{ partial "features/icon.html" (dict "name" "sun" "class" "sun-icon hidden relative z-10" "size" "md" "ariaLabel" "Light") }}
       <!-- 月亮图标 (暗色模式) -->
-      {{ partial "features/icon.html" (dict "name" "moon" "class" "moon-icon hidden relative z-10" "size" "md" "ariaLabel" (i18n "theme.dark")) }}
+      {{ partial "features/icon.html" (dict "name" "moon" "class" "moon-icon hidden relative z-10" "size" "md" "ariaLabel" "Dark") }}
       <!-- 系统图标 (跟随系统) -->
-      {{ partial "features/icon.html" (dict "name" "monitor" "class" "system-icon hidden relative z-10" "size" "md" "ariaLabel" (i18n "theme.system")) }}
+      {{ partial "features/icon.html" (dict "name" "monitor" "class" "system-icon hidden relative z-10" "size" "md" "ariaLabel" "System") }}
     {{- else -}}
       <!-- 单图标 -->
       {{ partial "features/icon.html" (dict "name" $icon "class" "relative z-10" "size" "md" "ariaLabel" $ariaLabel) }}

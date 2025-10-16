@@ -7,7 +7,7 @@
     <!-- 页面标题和描述 -->
     <header class="mb-8">
       <h1 class="text-foreground mb-4 text-3xl font-bold">
-        {{ i18n "nav.posts" | default "文章" }}
+        Posts
       </h1>
 
       {{ if .Content }}
@@ -16,7 +16,7 @@
         </div>
       {{ else }}
         <p class="text-muted-foreground mb-6">
-          {{ i18n "post.list_desc" | default "这里是所有已发布的文章，按时间倒序排列。" }}
+          Here are all published articles, sorted by date in descending order.
         </p>
       {{ end }}
 
@@ -26,14 +26,14 @@
         <div class="flex items-center gap-1">
           {{ partial "features/icon.html" (dict "name" "folder" "size" "sm" "ariaLabel" "") }}
           <span
-            >{{ i18n "post.total_posts" (dict "count" .Paginator.TotalNumberOfElements) | default (printf "共 %d 篇文章" .Paginator.TotalNumberOfElements) }}</span
+            >{{ printf "%d posts total" .Paginator.TotalNumberOfElements }}</span
           >
         </div>
         {{ if gt .Paginator.TotalPages 1 }}
           <div class="flex items-center gap-1">
             {{ partial "features/icon.html" (dict "name" "layers" "size" "sm" "ariaLabel" "") }}
             <span
-              >{{ i18n "nav.total_pages" (dict "count" .Paginator.TotalPages) | default (printf "共 %d 页" .Paginator.TotalPages) }}</span
+              >{{ printf "%d pages total" .Paginator.TotalPages }}</span
             >
           </div>
         {{ end }}
@@ -52,16 +52,16 @@
           {{ partial "features/icon.html" (dict "name" "folder" "size" "xl" "ariaLabel" "") }}
         </div>
         <h2 class="text-foreground mb-3 text-xl font-medium">
-          {{ i18n "post.no_posts" | default "暂无文章" }}
+          No posts yet
         </h2>
         <p class="text-muted-foreground mb-6">
-          {{ i18n "post.no_posts_desc" | default "还没有发布任何文章，请稍后再来查看。" }}
+          No articles have been published yet. Please check back later.
         </p>
         <a
           href="{{ "/" | relLangURL }}"
           class="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-medium transition-colors duration-300">
           {{ partial "features/icon.html" (dict "name" "home" "size" "sm" "ariaLabel" "") }}
-          <span>{{ i18n "nav.back_home" | default "返回首页" }}</span>
+          <span>Back to Home</span>
         </a>
       </div>
     {{ end }}

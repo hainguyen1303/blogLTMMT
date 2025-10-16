@@ -75,15 +75,15 @@
           <!-- 时间信息行 -->
           <div class="flex items-center gap-3">
             <div class="flex items-center gap-1.5">
-              {{ partial "features/icon.html" (dict "name" "calendar" "size" "sm" "ariaLabel" (i18n "post.published_on")) }}
+              {{ partial "features/icon.html" (dict "name" "calendar" "size" "sm" "ariaLabel" "Published on") }}
               <time datetime="{{ $page.Date.Format "2006-01-02" }}" class="font-medium">
-                {{ $page.Date.Format (i18n "time.date_format" | default "2006年01月02日") }}
+                {{ $page.Date.Format "January 02, 2006" }}
               </time>
             </div>
             {{ if $page.ReadingTime }}
               <div class="flex items-center gap-1.5">
-                {{ partial "features/icon.html" (dict "name" "clock" "size" "sm" "ariaLabel" (i18n "post.reading_time")) }}
-                <span class="font-medium">{{ $page.ReadingTime }} {{ i18n "time.minute" | default "min" }}</span>
+                {{ partial "features/icon.html" (dict "name" "clock" "size" "sm" "ariaLabel" "Reading time") }}
+                <span class="font-medium">{{ $page.ReadingTime }} minute</span>
               </div>
             {{ end }}
           </div>
