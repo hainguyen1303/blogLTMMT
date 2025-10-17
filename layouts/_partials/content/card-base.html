@@ -1,0 +1,108 @@
+﻿{{/* æ–‡ç« å¡ç‰‡åŸºç¡€ç»„ä»¶ - ç”¨äºŽä¸»æ–‡ç« åˆ—è¡¨æ˜¾ç¤º
+  @context {page} .page æ–‡ç« é¡µé¢å¯¹è±¡
+*/}}
+
+{{ $page := .page }}
+
+{{- $coverSrc := default $page.Params.image $page.Params.cover -}}
+
+{{/* ä½¿ç”¨é€šç”¨å›¾ç‰‡å¤„ç†å™¨ */}}
+{{- if $coverSrc -}}
+  {{- partial "content/image-processor.html" (dict
+    "context" $page
+    "src" $coverSrc
+    "enablePlaceholder" true
+    "outputType" "data"
+  ) -}}
+{{- else -}}
+  {{/* æ²¡æœ‰å°é¢å›¾æ—¶ï¼Œä»éœ€è¦ç”Ÿæˆå ä½å›¾æ•°æ® */}}
+  {{- partial "content/image-processor.html" (dict
+    "context" $page
+    "src" ""
+    "enablePlaceholder" true
+    "outputType" "data"
+  ) -}}
+{{- end -}}
+
+{{- $coverImage := $page.Scratch.Get "imageUrl" -}}
+{{- $placeholderData := $page.Scratch.Get "placeholderData" | default dict -}}
+{{- $randomImage := $placeholderData.randomImage | default "" -}}
+{{- $useRandomImage := $placeholderData.useRandomImage | default false -}}
+{{- $gradients := $placeholderData.gradients | default (slice "from-blue-500/20 to-purple-500/10") -}}
+{{- $colorIndex := $placeholderData.colorIndex | default 0 -}}
+
+
+{{- $summaryContent := "" -}}
+{{- if $page.Params.summary -}}
+  {{- $summaryContent = $page.Params.summary -}}
+{{- else if $page.Params.description -}}
+  {{- $summaryContent = $page.Params.description -}}
+{{- else if $page.Summary -}}
+  {{- $summaryContent = $page.Summary | plainify | truncate 140 -}}
+{{- end -}}
+
+{{/* æ–‡ç« å¡ç‰‡ */}}
+<article class="group">
+  <a href="{{ $page.RelPermalink }}" class="block">
+    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+      <!-- ç§»åŠ¨ç«¯é¡¶éƒ¨å°é¢ -->
+      <div class="block md:hidden">
+        {{ partial "content/card-image.html" (dict "page" $page "type" "mobile" "coverImage" $coverImage "randomImage" $randomImage "useRandomImage" $useRandomImage "gradients" $gradients "colorIndex" $colorIndex) }}
+      </div>
+
+      <!-- æ¡Œé¢ç«¯å³ä¾§å°é¢ -->
+      <div class="absolute top-0 right-0 hidden h-full w-80 transition-opacity duration-300 group-hover:opacity-90 md:block">
+        {{ partial "content/card-image.html" (dict "page" $page "type" "desktop" "coverImage" $coverImage "randomImage" $randomImage "useRandomImage" $useRandomImage "gradients" $gradients "colorIndex" $colorIndex) }}
+      </div>
+
+      <!-- æ¡Œé¢ç«¯æ‚¬æµ®æ—¶çš„å¡«å……é¢œè‰²é®ç½© -->
+      <div class="absolute top-0 right-0 hidden h-full w-80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block bg-gradient-to-l from-primary/5"></div>
+
+      <!-- æ–‡ç« å†…å®¹åŒºåŸŸ -->
+      <div class="relative z-10 flex flex-1 flex-col p-6 md:pr-[21rem]">
+        <!-- æ–‡ç« æ ‡é¢˜ -->
+        <h3 class="text-foreground group-hover:text-primary mb-4 text-lg font-semibold leading-tight transition-colors duration-200">
+          {{ $page.Title }}
+        </h3>
+
+        <!-- æ–‡ç« æ‘˜è¦ -->
+        {{ if $summaryContent }}
+          <p class="text-muted-foreground mb-4 text-sm leading-relaxed">
+            {{ $summaryContent }}
+          </p>
+        {{ end }}
+
+        <!-- å…ƒä¿¡æ¯ -->
+        <div class="mt-auto text-sm text-muted-foreground">
+          <!-- æ—¶é—´ä¿¡æ¯è¡Œ -->
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              {{ partial "features/icon.html" (dict "name" "calendar" "size" "sm" "ariaLabel" "Published on") }}
+              <time datetime="{{ $page.Date.Format "2006-01-02" }}" class="font-medium">
+                {{ $page.Date.Format "January 02, 2006" }}
+              </time>
+            </div>
+            {{ if $page.ReadingTime }}
+              {{ $rt := $page.ReadingTime }}
+              <div class="flex items-center gap-1.5">
+                {{ partial "features/icon.html" (dict "name" "clock" "size" "sm" "ariaLabel" "Reading time") }}
+                <span class="font-medium">{{ if eq $rt 1 }}1 minute{{ else }}{{ $rt }} minutes{{ end }}</span>
+              </div>
+            {{ end }}
+          </div>
+
+          <!-- æ ‡ç­¾è¡Œ -->
+          {{ if isset $page.Params "tags" }}
+            <div class="flex flex-wrap items-center gap-1.5 mt-2">
+              {{ range $tag := $page.Params.tags }}
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-1">
+                  <span class="font-medium">{{ $tag }}</span>
+                </span>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </a>
+</article>

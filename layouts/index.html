@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-4xl">
+    {{ partial "profile.html" . }}
+
+    {{ $homeParams := site.Params.home | default dict }}
+    {{ $recentPostsCount := index $homeParams "recentPostsCount" | default 5 }}
+    {{ $posts := where site.RegularPages "Section" "posts" | first $recentPostsCount }}
+
+    {{ partial "content/post-list.html" (dict
+      "posts" $posts
+      "title" "Recent Posts"
+      "showTitle" true
+      "showViewAll" true
+      "viewAllUrl" ("/posts/" | relURL)
+      )
+    }}
+
+    {{ if .Content }}
+      <section class="page-content mt-12">
+        <div class="prose max-w-none">
+          {{ .Content }}
+        </div>
+      </section>
+    {{ end }}
+
+  </div>
+{{ end }}

@@ -1,0 +1,47 @@
+{{ $logoDefaults := dict "image" "/images/logo.svg" "link" (site.Home.RelPermalink) }}
+{{ $logoData := site.Params.logo | default dict }}
+{{ $logo := merge $logoDefaults $logoData }}
+{{ $logoImage := index $logo "image" }}
+{{ $logoLink := index $logo "link" | default (site.Home.RelPermalink) }}
+
+<header class="{{- if site.Params.stickyHeader -}}sticky top-0 z-50{{ end }} mx-auto max-w-4xl px-4 py-6">
+  <div class="border-border bg-card/80 flex items-center rounded-xl border px-6 py-4 shadow-sm backdrop-blur-sm">
+    <div class="hidden w-full items-center md:flex">
+      <div class="flex items-center">
+        {{ if $logoImage }}
+          <a
+            href="{{ $logoLink | relURL }}"
+            class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full transition-transform duration-200 hover:scale-105"
+            aria-label="{{ site.Title }}">
+            <img
+              src="{{ $logoImage }}"
+              alt="{{ site.Title }}"
+              class="h-full w-full object-cover" />
+          </a>
+        {{ else }}
+          <a
+            href="{{ site.Home.RelPermalink }}"
+            class="bg-primary text-primary-foreground hover:bg-primary/90 flex h-10 w-10 items-center justify-center rounded-full text-lg font-bold transition-transform duration-200 hover:scale-105"
+            aria-label="{{ site.Title }}">
+            {{ substr site.Title 0 1 | upper }}
+          </a>
+        {{ end }}
+      </div>
+
+      {{ partial "navbar.html" . }}
+
+      <div class="flex items-center space-x-2">
+        {{ partial "theme-switcher.html" . }}
+        {{ partial "ui/dark-mode-switcher.html" . }}
+      </div>
+    </div>
+
+    <div class="flex w-full items-center justify-between md:hidden">
+      {{ partial "navigation/mobile-menu-toggle.html" . }}
+      <div class="flex items-center space-x-2">
+        {{ partial "theme-switcher.html" . }}
+        {{ partial "ui/dark-mode-switcher.html" . }}
+      </div>
+    </div>
+  </div>
+</header>

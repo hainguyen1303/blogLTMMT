@@ -1,0 +1,85 @@
+﻿{{ $defaultSocial := slice
+  (dict "name" "GitHub" "url" "https://github.com/username" "icon" "github")
+  (dict "name" "Twitter" "url" "https://twitter.com/username" "icon" "twitter")
+  (dict "name" "Email" "url" "mailto:hello@example.com" "icon" "email")
+}}
+{{ $defaultAuthor := dict
+  "name" (site.Title)
+  "avatar" "/images/avatar.png"
+  "social" $defaultSocial
+}}
+{{ $author := merge $defaultAuthor (site.Params.author | default dict) }}
+{{ $authorName := default site.Title (index $author "name") }}
+{{ $authorAvatar := index $author "avatar" }}
+{{ $authorSocial := index $author "social" }}
+
+{{ $githubURL := site.Params.github }}
+{{ $emailParam := site.Params.email }}
+{{ $twitterURL := site.Params.twitter }}
+
+<section class="author-section mb-12">
+  <div class="bg-card border-border rounded-xl border p-8 shadow-sm">
+    <div class="flex flex-col items-center gap-6 text-center md:flex-row md:items-start md:text-left">
+      <div class="flex-shrink-0">
+        {{ if $authorAvatar }}
+          <img
+            src="{{ $authorAvatar }}"
+            alt="{{ $authorName }}"
+            class="border-primary/20 h-24 w-24 rounded-full border-4 object-cover shadow-lg" />
+        {{ else }}
+          <div class="bg-primary text-primary-foreground flex h-24 w-24 items-center justify-center rounded-full text-2xl font-bold shadow-lg">
+            {{ substr $authorName 0 1 | upper }}
+          </div>
+        {{ end }}
+      </div>
+
+      <div class="min-w-0 flex-1">
+        <h1 class="text-foreground mb-2 text-3xl font-bold">
+          {{ $authorName }}
+        </h1>
+
+{{ with site.Params.author.subtitle1 }}
+  <p class="text-muted-foreground mb-1 text-lg"><strong>{{ . }}</strong></p>
+{{ end }}
+{{ with site.Params.author.subtitle2 }}
+  <p class="text-muted-foreground mb-4 text-lg"><strong>{{ . }}</strong></p>
+{{ end }}
+
+        {{ if $authorSocial }}
+          <div class="flex flex-wrap justify-center gap-3 md:justify-start">
+            {{ range $authorSocial }}
+              {{ $name := lower .name }}
+              {{ $href := .url }}
+              {{ if and $githubURL (eq $name "github") }}
+                {{ $href = $githubURL }}
+              {{ end }}
+              {{ if and $emailParam (eq $name "email") }}
+                {{ $href = $emailParam }}
+                {{ if not (hasPrefix $href "mailto:") }}
+                  {{ $href = printf "mailto:%s" $href }}
+                {{ end }}
+              {{ end }}
+              {{ if and $twitterURL (eq $name "twitter") }}
+                {{ $href = $twitterURL }}
+              {{ end }}
+              <a
+                href="{{ $href }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-muted text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
+                title="{{ .name }}">
+                {{ if .icon }}
+                  {{ partial "features/icon.html" (dict "name" .icon "size" "sm" "ariaLabel" .name) }}
+                {{ end }}
+                <span class="text-sm font-medium">{{ .name }}</span>
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
