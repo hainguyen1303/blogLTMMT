@@ -5,7 +5,7 @@
 }}
 {{ $defaultAuthor := dict
   "name" (site.Title)
-  "avatar" "/images/avatar.svg"
+  "avatar" "/images/avatar.png"
   "social" $defaultSocial
 }}
 {{ $author := merge $defaultAuthor (site.Params.author | default dict) }}
