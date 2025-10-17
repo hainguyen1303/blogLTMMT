@@ -1,9 +1,10 @@
----
+﻿---
 title: "Biến, hàm và phạm vi (scope) trong JavaScript"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
 description: "Khám phá cách khai báo biến, định nghĩa hàm và quản lý phạm vi trong JavaScript."
+image: "/images/posts/bien-ham-va-pham-vi-javascript.jpg"
 ---
 
 Hiểu rõ biến, hàm và phạm vi giúp bạn tránh nhiều lỗi khó chịu trong JavaScript. Không ít lần tôi chứng kiến người mới vô tình “đè” biến toàn cục hoặc không hiểu vì sao hàm không truy cập được biến bên ngoài. Bài viết này sẽ giải thích từng khái niệm một cách dễ hiểu, kèm theo ví dụ để bạn tự kiểm chứng.
@@ -35,7 +36,7 @@ const donGia = 150_000;
 console.log(`Tổng tiền phải trả: ${tinhTienGiaoDich(soLuong, donGia)} VND`);
 ```
 
-Trong ví dụ, `thue` được khai báo bằng `const` vì tỷ lệ thuế cố định, trong khi `tong` dùng `let` vì giá trị thay đổi trong quá trình tính toán.
+Trong ví dụ, `thue` được khai báo bằng `const` vì tỉ lệ thuế cố định, trong khi `tong` dùng `let` và giá trị thay đổi trong quá trình tính toán.
 
 ## Phạm vi (Scope)
 

@@ -1,19 +1,21 @@
-{{/* 文章卡片基础组件 - 用于主文章列表显示
-  @context {page} .page 文章页面对象
+﻿{{/* æ–‡ç« å¡ç‰‡åŸºç¡€ç»„ä»¶ - ç”¨äºŽä¸»æ–‡ç« åˆ—è¡¨æ˜¾ç¤º
+  @context {page} .page æ–‡ç« é¡µé¢å¯¹è±¡
 */}}
 
 {{ $page := .page }}
 
-{{/* 使用通用图片处理器 */}}
-{{- if $page.Params.cover -}}
+{{- $coverSrc := default $page.Params.image $page.Params.cover -}}
+
+{{/* ä½¿ç”¨é€šç”¨å›¾ç‰‡å¤„ç†å™¨ */}}
+{{- if $coverSrc -}}
   {{- partial "content/image-processor.html" (dict
     "context" $page
-    "src" $page.Params.cover
+    "src" $coverSrc
     "enablePlaceholder" true
     "outputType" "data"
   ) -}}
 {{- else -}}
-  {{/* 没有封面图时，仍需要生成占位图数据 */}}
+  {{/* æ²¡æœ‰å°é¢å›¾æ—¶ï¼Œä»éœ€è¦ç”Ÿæˆå ä½å›¾æ•°æ® */}}
   {{- partial "content/image-processor.html" (dict
     "context" $page
     "src" ""
@@ -39,40 +41,40 @@
   {{- $summaryContent = $page.Summary | plainify | truncate 140 -}}
 {{- end -}}
 
-{{/* 文章卡片 */}}
+{{/* æ–‡ç« å¡ç‰‡ */}}
 <article class="group">
   <a href="{{ $page.RelPermalink }}" class="block">
     <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      <!-- 移动端顶部封面 -->
+      <!-- ç§»åŠ¨ç«¯é¡¶éƒ¨å°é¢ -->
       <div class="block md:hidden">
         {{ partial "content/card-image.html" (dict "page" $page "type" "mobile" "coverImage" $coverImage "randomImage" $randomImage "useRandomImage" $useRandomImage "gradients" $gradients "colorIndex" $colorIndex) }}
       </div>
 
-      <!-- 桌面端右侧封面 -->
+      <!-- æ¡Œé¢ç«¯å³ä¾§å°é¢ -->
       <div class="absolute top-0 right-0 hidden h-full w-80 transition-opacity duration-300 group-hover:opacity-90 md:block">
         {{ partial "content/card-image.html" (dict "page" $page "type" "desktop" "coverImage" $coverImage "randomImage" $randomImage "useRandomImage" $useRandomImage "gradients" $gradients "colorIndex" $colorIndex) }}
       </div>
 
-      <!-- 桌面端悬浮时的填充颜色遮罩 -->
+      <!-- æ¡Œé¢ç«¯æ‚¬æµ®æ—¶çš„å¡«å……é¢œè‰²é®ç½© -->
       <div class="absolute top-0 right-0 hidden h-full w-80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block bg-gradient-to-l from-primary/5"></div>
 
-      <!-- 文章内容区域 -->
+      <!-- æ–‡ç« å†…å®¹åŒºåŸŸ -->
       <div class="relative z-10 flex flex-1 flex-col p-6 md:pr-[21rem]">
-        <!-- 文章标题 -->
+        <!-- æ–‡ç« æ ‡é¢˜ -->
         <h3 class="text-foreground group-hover:text-primary mb-4 text-lg font-semibold leading-tight transition-colors duration-200">
           {{ $page.Title }}
         </h3>
 
-        <!-- 文章摘要 -->
+        <!-- æ–‡ç« æ‘˜è¦ -->
         {{ if $summaryContent }}
           <p class="text-muted-foreground mb-4 text-sm leading-relaxed">
             {{ $summaryContent }}
           </p>
         {{ end }}
 
-        <!-- 元信息 -->
+        <!-- å…ƒä¿¡æ¯ -->
         <div class="mt-auto text-sm text-muted-foreground">
-          <!-- 时间信息行 -->
+          <!-- æ—¶é—´ä¿¡æ¯è¡Œ -->
           <div class="flex items-center gap-3">
             <div class="flex items-center gap-1.5">
               {{ partial "features/icon.html" (dict "name" "calendar" "size" "sm" "ariaLabel" "Published on") }}
@@ -89,7 +91,7 @@
             {{ end }}
           </div>
 
-          <!-- 标签行 -->
+          <!-- æ ‡ç­¾è¡Œ -->
           {{ if isset $page.Params "tags" }}
             <div class="flex flex-wrap items-center gap-1.5 mt-2">
               {{ range $tag := $page.Params.tags }}
