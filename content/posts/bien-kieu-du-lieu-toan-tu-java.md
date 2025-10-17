@@ -1,9 +1,11 @@
----
+﻿---
 title: "Biến, kiểu dữ liệu và toán tử trong Java"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Tìm hiểu cách khai báo biến, lựa chọn kiểu dữ liệu và sử dụng toán tử cơ bản trong Java."
+image: "/images/posts/bien-kieu-du-lieu-toan-tu-java.jpg"
 ---
 
 Khi mới chạm vào Java, nhiều bạn dễ bị choáng ngợp bởi số lượng khái niệm cần ghi nhớ. Tuy nhiên, nếu hiểu rõ biến, kiểu dữ liệu và toán tử, bạn sẽ nắm được “ngữ pháp” cốt lõi để diễn đạt mọi ý tưởng. Bài viết này giúp bạn có cái nhìn hệ thống, đi kèm ví dụ thực tế để thực hành ngay.

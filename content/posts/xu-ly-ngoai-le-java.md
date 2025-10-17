@@ -1,9 +1,11 @@
----
+﻿---
 title: "Xử lý ngoại lệ (Exception Handling) trong Java"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Học cách phát hiện, ném và xử lý ngoại lệ trong Java để ứng dụng luôn ổn định."
+image: "/images/posts/xu-ly-ngoai-le-java.jpg"
 ---
 
 Ngoại lệ (exception) là những tình huống bất ngờ xảy ra khi chương trình đang chạy, chẳng hạn đọc file không tồn tại hoặc chia cho 0. Nếu không xử lý, ứng dụng sẽ dừng đột ngột và trải nghiệm người dùng bị ảnh hưởng. Với Java, cơ chế exception giúp chúng ta kiểm soát lỗi thay vì để chúng phá hỏng toàn bộ hệ thống.

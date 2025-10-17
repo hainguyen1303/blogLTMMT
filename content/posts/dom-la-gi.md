@@ -1,9 +1,11 @@
----
+﻿---
 title: "DOM là gì? Cách JavaScript tương tác với trang web"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Giải thích Document Object Model và cách dùng JavaScript để đọc, sửa nội dung trang web."
+image: "/images/posts/dom-la-gi.jpg"
 ---
 
 Khi bạn mở một trang web, trình duyệt không chỉ hiển thị HTML tĩnh mà còn xây dựng một cấu trúc dữ liệu gọi là Document Object Model (DOM). DOM giống như phiên bản “sống” của trang, nơi JavaScript có thể đọc, chỉnh sửa và phản hồi các sự kiện của người dùng. Hiểu DOM giúp bạn biến những trang HTML tĩnh trở nên tương tác và thông minh.

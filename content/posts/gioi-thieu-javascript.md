@@ -1,9 +1,11 @@
----
+﻿---
 title: "Giới thiệu về JavaScript – Ngôn ngữ linh hoạt của web"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Tổng quan về JavaScript, lịch sử phát triển và lý do ngôn ngữ này thống trị trình duyệt."
+image: "/images/posts/gioi-thieu-javascript.jpg"
 ---
 
 JavaScript là ngôn ngữ giúp các trang web trở nên sống động. Từ những hiệu ứng đơn giản đến ứng dụng web phức tạp như Gmail hay Notion, JavaScript luôn đóng vai trò trung tâm. Là một lập trình viên Việt Nam, tôi luôn khuyến khích người mới bắt đầu với JavaScript để hiểu cách web vận hành và mở ra cơ hội nghề nghiệp rộng lớn.

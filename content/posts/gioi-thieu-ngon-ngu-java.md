@@ -1,9 +1,11 @@
----
+﻿---
 title: "Giới thiệu về ngôn ngữ Java – Tại sao nó vẫn quan trọng đến ngày nay"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Khám phá lịch sử, ưu điểm và lý do Java vẫn là lựa chọn phổ biến cho lập trình viên."
+image: "/images/posts/gioi-thieu-ngon-ngu-java.jpg"
 ---
 
 Java đã xuất hiện từ năm 1995 nhưng vẫn giữ vị thế vững chắc trong thế giới phát triển phần mềm hiện đại. Là một lập trình viên Việt Nam, tôi thường ví Java giống như một “người bạn lâu năm” luôn đáng tin cậy khi cần xây dựng ứng dụng bền vững, an toàn và có khả năng mở rộng cao. Trong bài viết này, chúng ta sẽ điểm lại hành trình của Java, phân tích vì sao ngôn ngữ này vẫn được các doanh nghiệp ưa chuộng, và gợi ý cách bạn có thể bắt đầu học một cách hiệu quả.

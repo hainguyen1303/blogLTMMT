@@ -1,9 +1,11 @@
----
+﻿---
 title: "So sánh Java và JavaScript – Hai ngôn ngữ khác nhau nhưng cùng tên"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Đối chiếu Java và JavaScript về mục tiêu thiết kế, môi trường chạy và cách sử dụng thực tế."
+image: "/images/posts/so-sanh-java-va-javascript.jpg"
 ---
 
 Cái tên “Java” trong JavaScript dễ khiến người mới nhầm lẫn hai ngôn ngữ có liên hệ chặt chẽ. Thực tế, chúng khác nhau gần như mọi mặt, từ cú pháp đến môi trường thực thi. Bài viết này sẽ giúp bạn phân biệt rõ ràng để lựa chọn công cụ phù hợp cho dự án của mình.

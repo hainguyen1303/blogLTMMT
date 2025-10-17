@@ -1,9 +1,11 @@
----
+﻿---
 title: "Lập trình hướng đối tượng trong Java – Hiểu rõ Class và Object"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Tìm hiểu khái niệm class, object và bốn đặc tính hướng đối tượng quan trọng trong Java."
+image: "/images/posts/lap-trinh-huong-doi-tuong-java.jpg"
 ---
 
 Lập trình hướng đối tượng (OOP) là trái tim của Java. Nhờ mô hình này, chúng ta có thể mô tả thế giới thực một cách trực quan thông qua các lớp (class) và đối tượng (object). Trong bài viết này, tôi sẽ cùng bạn đi qua những khái niệm nền tảng, minh họa bằng code và chia sẻ một số kinh nghiệm giúp bạn áp dụng OOP hiệu quả khi xây dựng ứng dụng thực tế.

@@ -1,9 +1,11 @@
----
+﻿---
 title: "Java Collections – List, Set, Map là gì và dùng khi nào"
 date: 2025-10-16
 draft: false
 tags: ["Java", "JavaScript", "Lập trình"]
+categories: ["Lập trình"]
 description: "Giải thích các cấu trúc List, Set, Map trong Java Collections Framework và cách chọn đúng công cụ."
+image: "/images/posts/java-collections-co-ban.jpg"
 ---
 
 Khi dữ liệu vượt quá mức vài biến đơn lẻ, Java Collections Framework sẽ trở thành trợ thủ đắc lực cho bạn. Bộ sưu tập này cung cấp các cấu trúc dữ liệu đã được tối ưu sẵn, giúp việc lưu trữ, truy xuất và xử lý trở nên hiệu quả. Ba nhân vật quan trọng nhất mà lập trình viên nào cũng phải nắm là `List`, `Set` và `Map`.
