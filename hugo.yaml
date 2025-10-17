@@ -1,6 +1,6 @@
 baseURL: https://hugo-narrow.vercel.app/
 languageCode: en-US
-title: Hugo Narrow
+title: Nguyen Van Hai’s Blog
 theme: hugo-narrow
 buildFuture: true
 
