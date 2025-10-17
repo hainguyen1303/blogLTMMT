@@ -2,60 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://hugo-narrow.vercel.app/about/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/bien-ham-va-pham-vi-javascript/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/bien-ham-va-pham-vi-javascript/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/bien-kieu-du-lieu-toan-tu-java/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/bien-kieu-du-lieu-toan-tu-java/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://hugo-narrow.vercel.app/categories/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/dom-la-gi/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/dom-la-gi/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/gioi-thieu-javascript/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/gioi-thieu-javascript/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/gioi-thieu-ngon-ngu-java/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/gioi-thieu-ngon-ngu-java/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/java/</loc>
+    <loc>https://hugo-narrow.vercel.app/tags/java/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/java-collections-co-ban/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/java-collections-co-ban/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
+    <loc>https://hugo-narrow.vercel.app/tags/javascript/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
+    <loc>https://hugo-narrow.vercel.app/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/l%E1%BA%ADp-tr%C3%ACnh/</loc>
+    <loc>https://hugo-narrow.vercel.app/tags/l%E1%BA%ADp-tr%C3%ACnh/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/lap-trinh-huong-doi-tuong-java/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/lap-trinh-huong-doi-tuong-java/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/so-sanh-java-va-javascript/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/so-sanh-java-va-javascript/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://hugo-narrow.vercel.app/tags/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/xu-ly-ngoai-le-java/</loc>
+    <loc>https://hugo-narrow.vercel.app/posts/xu-ly-ngoai-le-java/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://hugo-narrow.vercel.app/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://hugo-narrow.vercel.app/archives/</loc>
   </url>
 </urlset>
