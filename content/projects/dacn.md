@@ -38,7 +38,7 @@ Mục tiêu của đồ án là **xây dựng một hệ thống mạng doanh ng
 ## 3. Mô hình mạng dự kiến
 
 <div class="figure" align="center">
-  <img src="/images/doanchuyennganh/mohinh.png" alt="Sơ đồ mạng đồ án chuyên ngành Sophos XG trên EVE-NG">
+  <img src="/images/dacn/mohinh.jpg" alt="Sơ đồ mạng đồ án chuyên ngành Sophos XG trên EVE-NG">
   <p><i>Hình 1: Mô hình mạng doanh nghiệp mô phỏng sử dụng Sophos XG trên EVE-NG</i></p>
 </div>
 
@@ -86,11 +86,6 @@ Hệ thống được triển khai mô phỏng trên **EVE-NG**, với thành ph
 ---
 
 ## 7. Hình ảnh minh chứng (đang cập nhật)
-
-<div class="figure" align="center">
-  <img src="/images/doanchuyennganh/preview.png" alt="Ảnh minh chứng đồ án chuyên ngành">
-  <p><i>Hình 2: Ảnh minh chứng tiến độ và mô hình thực tế của đồ án chuyên ngành</i></p>
-</div>
 
 ---
 
