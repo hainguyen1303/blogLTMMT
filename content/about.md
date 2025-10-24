@@ -72,59 +72,66 @@ Dưới đây là một số cột mốc quan trọng trong hành trình học t
 ## Thành tích học tập
 
 <ul style="list-style-type: none; padding-left: 0; margin-top: 12px;">
-  <li style="margin-bottom: 8px;"><strong>GPA hiện tại:</strong> 3.1 / 4.0</li>
+  <li style="margin-bottom: 6px;"><strong>GPA hiện tại:</strong> 3.1 / 4.0</li>
   <li><strong>Chứng chỉ quốc tế từ Cisco Networking Academy:</strong></li>
 </ul>
 
-<div style="display: flex; flex-direction: column; gap: 24px; margin-top: 15px;">
+<!-- Accordion Container -->
+<div style="margin-top: 8px;">
 
   <!-- Network Basics -->
-  <div style="display: flex; align-items: center; justify-content: space-between;
-              border: 1px solid #eee; padding: 14px 20px; border-radius: 10px;
-              box-shadow: 0 2px 8px rgba(0,0,0,0.05); background-color: #fff;">
-    <div style="flex: 1;">
-      <p style="font-weight: 600; margin: 0;">📘 Network Basics</p>
-      <p style="color: #555; font-size: 14px; margin: 4px 0;">
+  <details style="border: 1px solid #e5e5e5; border-radius: 10px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: box-shadow 0.25s ease; margin-bottom: 3px;">
+    <summary onmouseover="this.parentElement.style.boxShadow='0 3px 10px rgba(0,0,0,0.08)';" 
+              onmouseout="this.parentElement.style.boxShadow='0 1px 4px rgba(0,0,0,0.04)';"
+              style="cursor: pointer; padding: 10px 18px; font-weight: 600; font-size: 15px; display: flex; align-items: center;">
+      📘 Network Basics
+    </summary>
+    <div style="padding: 10px 20px 18px 20px;">
+      <p style="color: #555; font-size: 14px; margin: 6px 0;">
         Kiến thức nền tảng về mạng máy tính (OSI, IP, Routing)
       </p>
+      <div style="text-align: center; margin-top: 10px;">
+        <img src="/images/certificates/network-basics.jpg" alt="Network Basics" 
+             style="max-width: 90%; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      </div>
     </div>
-    <div style="flex-shrink: 0; margin-left: 20px;">
-      <img src="/images/certificates/network-basics.png" alt="Network Basics"
-           style="width: 120px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
-    </div>
-  </div>
+  </details>
 
   <!-- JavaScript Essentials 1 -->
-  <div style="display: flex; align-items: center; justify-content: space-between;
-              border: 1px solid #eee; padding: 14px 20px; border-radius: 10px;
-              box-shadow: 0 2px 8px rgba(0,0,0,0.05); background-color: #fff;">
-    <div style="flex: 1;">
-      <p style="font-weight: 600; margin: 0;">💻 JavaScript Essentials 1</p>
-      <p style="color: #555; font-size: 14px; margin: 4px 0;">
+  <details style="border: 1px solid #e5e5e5; border-radius: 10px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: box-shadow 0.25s ease; margin-bottom: 3px;">
+    <summary onmouseover="this.parentElement.style.boxShadow='0 3px 10px rgba(0,0,0,0.08)';" 
+              onmouseout="this.parentElement.style.boxShadow='0 1px 4px rgba(0,0,0,0.04)';"
+              style="cursor: pointer; padding: 10px 18px; font-weight: 600; font-size: 15px; display: flex; align-items: center;">
+      💻 JavaScript Essentials 1
+    </summary>
+    <div style="padding: 10px 20px 18px 20px;">
+      <p style="color: #555; font-size: 14px; margin: 6px 0;">
         Kiến thức cơ bản về JS, logic lập trình và cú pháp
       </p>
+      <div style="text-align: center; margin-top: 10px;">
+        <img src="/images/certificates/javascript-essentials-1.jpg" alt="JavaScript Essentials 1" 
+             style="max-width: 90%; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      </div>
     </div>
-    <div style="flex-shrink: 0; margin-left: 20px;">
-      <img src="/images/certificates/javascript-essentials-1.png" alt="JavaScript Essentials 1"
-           style="width: 120px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
-    </div>
-  </div>
+  </details>
 
   <!-- JavaScript Essentials 2 -->
-  <div style="display: flex; align-items: center; justify-content: space-between;
-              border: 1px solid #eee; padding: 14px 20px; border-radius: 10px;
-              box-shadow: 0 2px 8px rgba(0,0,0,0.05); background-color: #fff;">
-    <div style="flex: 1;">
-      <p style="font-weight: 600; margin: 0;">💻 JavaScript Essentials 2</p>
-      <p style="color: #555; font-size: 14px; margin: 4px 0;">
+  <details style="border: 1px solid #e5e5e5; border-radius: 10px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: box-shadow 0.25s ease;">
+    <summary onmouseover="this.parentElement.style.boxShadow='0 3px 10px rgba(0,0,0,0.08)';" 
+              onmouseout="this.parentElement.style.boxShadow='0 1px 4px rgba(0,0,0,0.04)';"
+              style="cursor: pointer; padding: 10px 18px; font-weight: 600; font-size: 15px; display: flex; align-items: center;">
+      💻 JavaScript Essentials 2
+    </summary>
+    <div style="padding: 10px 20px 18px 20px;">
+      <p style="color: #555; font-size: 14px; margin: 6px 0;">
         Lập trình hướng đối tượng và thao tác DOM nâng cao
       </p>
+      <div style="text-align: center; margin-top: 10px;">
+        <img src="/images/certificates/javascript-essentials-2.jpg" alt="JavaScript Essentials 2" 
+             style="max-width: 90%; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+      </div>
     </div>
-    <div style="flex-shrink: 0; margin-left: 20px;">
-      <img src="/images/certificates/javascript-essentials-2.png" alt="JavaScript Essentials 2"
-           style="width: 120px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
-    </div>
-  </div>
+  </details>
 
 </div>
 
@@ -143,35 +150,125 @@ Blog được xây dựng bằng **Hugo**, triển khai trên **Netlify**, và q
 
 ---
 
-<div style="border-radius: 12px; padding: 22px; background: #fafafa;">
-
+<div class="contact-card">
   <h3>📬 Liên hệ & Kết nối</h3>
-  <ul style="list-style: none; padding: 0;">
+
+  <ul class="contact-list">
     <li>💻 <strong>GitHub:</strong> <a href="https://github.com/hainguyen1303">hainguyen1303</a></li>
     <li>✉️ <strong>Email:</strong> <a href="mailto:hairnguyen13032004@gmail.com">hairnguyen13032004@gmail.com</a></li>
     <li>📍 <strong>Địa điểm:</strong> TP. Thủ Đức, TP.HCM</li>
   </ul>
 
-  <hr style="margin: 15px 0;">
+  <hr class="contact-divider">
 
   <p><strong>📍 Vị trí liên hệ</strong><br>
-  HUTECH – Đại học Công nghệ TP.HCM (Cơ sở Thủ Đức)<br>
-  Xa lộ Hà Nội, P. Hiệp Phú / Linh Trung, TP. Thủ Đức, TP.HCM<br>
-  <a href="https://www.google.com/maps/search/?api=1&query=HUTECH+-+Đại+học+Công+nghệ+TP.HCM+Cơ+sở+Thủ+Đức" target="_blank">Xem bản đồ lớn hơn</a></p>
+    HUTECH – Đại học Công nghệ TP.HCM (Cơ sở Thủ Đức)<br>
+    Xa lộ Hà Nội, P. Hiệp Phú / Linh Trung, TP. Thủ Đức, TP.HCM<br>
+    <a href="https://www.google.com/maps/search/?api=1&query=HUTECH+-+Đại+học+Công+nghệ+TP.HCM+Cơ+sở+Thủ+Đức" target="_blank">Xem bản đồ lớn hơn</a>
+  </p>
 
   <iframe
     src="https://www.google.com/maps?q=HUTECH+-+Đại+học+Công+nghệ+TP.HCM+Cơ+sở+Thủ+Đức&output=embed"
     width="100%" height="250"
-    style="border:0; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);" allowfullscreen loading="lazy">
+    allowfullscreen loading="lazy" class="map-frame">
   </iframe>
+
+  <hr class="contact-divider">
+
+  <div class="thank-box">
+    Cảm ơn bạn đã ghé thăm blog của mình!  
+    Mình hy vọng những chia sẻ nơi đây sẽ giúp bạn có thêm kiến thức, cảm hứng và động lực trên hành trình học tập, nghiên cứu và phát triển bản thân.  
+    Nếu thấy hữu ích, đừng ngần ngại kết nối hoặc để lại lời nhắn — cùng nhau, chúng ta có thể học hỏi và tiến xa hơn mỗi ngày 🌱
+  </div>
 </div>
-<hr style="margin: 32px 0; border: none; border-top: 1px solid #ddd;">
 
-<div style="background: #f9fafb; border-left: 5px solid #007bff; border-radius: 8px; padding: 18px 24px; font-style: italic; color: #333; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<style>
+  /* ---------- BASE COLOR SYSTEM ---------- */
+  :root {
+    --bg-light: #fafafa;
+    --bg-dark: #0f172a;
+    --text-light: #1e293b;
+    --text-dark: #e2e8f0;
+    --border-light: #e5e7eb;
+    --border-dark: #1e293b;
+    --accent-light: #2563eb;
+    --accent-dark: #60a5fa;
+    --shadow-light: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-dark: 0 2px 12px rgba(0,0,0,0.45);
+  }
 
-  Cảm ơn bạn đã ghé thăm blog của mình!  
-  Mình hy vọng những chia sẻ nơi đây sẽ giúp bạn có thêm kiến thức, cảm hứng và động lực trên hành trình học tập, nghiên cứu và phát triển bản thân.  
-  Nếu thấy hữu ích, đừng ngần ngại kết nối hoặc để lại lời nhắn — cùng nhau, chúng ta có thể học hỏi và tiến xa hơn mỗi ngày 🌱
-</div>
+  @media (prefers-color-scheme: light) {
+    .contact-card {
+      background: var(--bg-light);
+      color: var(--text-light);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-light);
+    }
+    .contact-card a {
+      color: var(--accent-light);
+    }
+  }
 
+  @media (prefers-color-scheme: dark) {
+    .contact-card {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+      border: 1px solid var(--border-dark);
+      box-shadow: var(--shadow-dark);
+    }
+    .contact-card a {
+      color: var(--accent-dark);
+    }
+  }
 
+  /* ---------- STRUCTURE ---------- */
+  .contact-card {
+    border-radius: 12px;
+    padding: 22px;
+    transition: all 0.3s ease;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-list li {
+    margin-bottom: 6px;
+  }
+
+  .contact-divider {
+    margin: 16px 0;
+    border: none;
+    border-top: 1px solid var(--border-light);
+    opacity: 0.3;
+  }
+
+  .map-frame {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-top: 8px;
+  }
+
+  /* ---------- THANK BOX ---------- */
+  .thank-box {
+    background: color-mix(in srgb, var(--bg-light) 90%, transparent);
+    border-left: 5px solid var(--accent-light);
+    border-radius: 8px;
+    padding: 18px 24px;
+    font-style: italic;
+    color: var(--text-light);
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .thank-box {
+      background: color-mix(in srgb, var(--bg-dark) 85%, transparent);
+      border-left: 5px solid var(--accent-dark);
+      color: var(--text-dark);
+      box-shadow: var(--shadow-dark);
+    }
+  }
+</style>
