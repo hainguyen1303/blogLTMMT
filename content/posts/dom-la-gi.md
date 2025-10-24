@@ -2,7 +2,7 @@
 title: "DOM là gì? Cách JavaScript tương tác với trang web"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["JavaScript", "Lập trình"]
 categories: ["Lập trình"]
 description: "Giải thích Document Object Model và cách dùng JavaScript để đọc, sửa nội dung trang web."
 image: "/images/posts/dom-la-gi.jpg"

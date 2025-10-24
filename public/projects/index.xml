@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Nguyen Van Hai’s Blog</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Nguyen Van Hai’s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Triển khai hệ thống Sophos Firewall trong hạ tầng mạng</title>
+      <link>http://localhost:1313/projects/dacn/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dacn/</guid>
+      <description>Đồ án Chuyên Ngành – Xây dựng và triển khai hệ thống bảo mật mạng doanh nghiệp sử dụng Sophos XG Firewall</description>
+    </item>
+    <item>
+      <title>Calo Plan – Ứng dụng quản lý dinh dưỡng và theo dõi sức khỏe cá nhân</title>
+      <link>http://localhost:1313/projects/caloplan/</link>
+      <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/caloplan/</guid>
+      <description>&lt;h2 id=&#34;thông-tin-nhóm-thực-hiện&#34;&gt;Thông tin nhóm thực hiện&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tên đề tài:&lt;/strong&gt; Ứng dụng Quản lý Dinh dưỡng – &lt;em&gt;Calo Plan&lt;/em&gt;&lt;br&gt;&#xA;&lt;strong&gt;Lớp học phần:&lt;/strong&gt; Lập trình thiết bị di động&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Thành viên nhóm:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Nguyễn Văn Hải&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Triệu Xuân Dũng&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Vũ Nguyễn Khánh Dương&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tiết Thanh Minh Hiếu&lt;/strong&gt; – Leader&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;giới-thiệu&#34;&gt;Giới thiệu&lt;/h2&gt;&#xA;&lt;p&gt;Trong bối cảnh con người ngày càng quan tâm đến &lt;strong&gt;dinh dưỡng và sức khỏe&lt;/strong&gt;, việc kiểm soát lượng &lt;strong&gt;calo nạp vào và tiêu thụ mỗi ngày&lt;/strong&gt; trở nên vô cùng quan trọng.&lt;br&gt;&#xA;Đồ án &lt;strong&gt;“Ứng dụng Quản lý Dinh dưỡng – Calo Plan”&lt;/strong&gt; được phát triển nhằm hỗ trợ người dùng &lt;strong&gt;theo dõi thói quen ăn uống, kiểm soát cân nặng, và duy trì lối sống lành mạnh&lt;/strong&gt; thông qua nền tảng di động trực quan và dễ sử dụng.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Triển khai hệ thống mạng với Sophos Firewall</title>
+      <link>http://localhost:1313/projects/dacs/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dacs/</guid>
+      <description>&lt;h2 id=&#34;giới-thiệu&#34;&gt;Giới thiệu&lt;/h2&gt;&#xA;&lt;p&gt;Đồ án &lt;strong&gt;“Triển khai hệ thống mạng với Sophos Firewall”&lt;/strong&gt; được thực hiện trong khuôn khổ học phần &lt;strong&gt;Đồ án Cơ Sở&lt;/strong&gt; của chuyên ngành &lt;strong&gt;Mạng Máy Tính – K22, Trường Đại học Công Nghệ TP.HCM (HUTECH)&lt;/strong&gt;.&lt;br&gt;&#xA;Thời gian thực hiện: &lt;strong&gt;10/03 – 25/05/2025&lt;/strong&gt;&lt;br&gt;&#xA;Giảng viên hướng dẫn: &lt;strong&gt;ThS. Nguyễn Văn Cẩn&lt;/strong&gt;&lt;br&gt;&#xA;Kết quả: &lt;strong&gt;Top 1 nhóm chuyên ngành (8.5/10)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mục tiêu của đồ án là xây dựng một hệ thống mạng mô phỏng doanh nghiệp nhỏ, có khả năng &lt;strong&gt;bảo mật, quản lý lưu lượng và truy cập từ xa an toàn&lt;/strong&gt; dựa trên giải pháp &lt;strong&gt;Sophos UTM 9.7&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

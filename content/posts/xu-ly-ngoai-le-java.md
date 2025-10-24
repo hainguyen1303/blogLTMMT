@@ -2,7 +2,7 @@
 title: "Xử lý ngoại lệ (Exception Handling) trong Java"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["Java", "Lập trình"]
 categories: ["Lập trình"]
 description: "Học cách phát hiện, ném và xử lý ngoại lệ trong Java để ứng dụng luôn ổn định."
 image: "/images/posts/xu-ly-ngoai-le-java.jpg"

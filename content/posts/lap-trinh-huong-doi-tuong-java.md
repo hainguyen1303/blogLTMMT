@@ -2,7 +2,7 @@
 title: "Lập trình hướng đối tượng trong Java – Hiểu rõ Class và Object"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["Java", "Lập trình"]
 categories: ["Lập trình"]
 description: "Tìm hiểu khái niệm class, object và bốn đặc tính hướng đối tượng quan trọng trong Java."
 image: "/images/posts/lap-trinh-huong-doi-tuong-java.jpg"

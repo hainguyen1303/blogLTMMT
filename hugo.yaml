@@ -11,6 +11,11 @@ params:
     name: "Nguyễn Văn Hải"
     subtitle1: "Blog cá nhân được viết bằng Hugo và GitHub repository."
     subtitle2: "Đồ án môn học Lập Trình Mạng Máy Tính."
+    
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 menu:
   main:
@@ -34,3 +39,4 @@ menu:
       weight: 40
       params:
         icon: archive
+

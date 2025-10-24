@@ -2,7 +2,7 @@
 title: "Biến, hàm và phạm vi (scope) trong JavaScript"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["JavaScript", "Lập trình"]
 categories: ["Lập trình"]
 description: "Khám phá cách khai báo biến, định nghĩa hàm và quản lý phạm vi trong JavaScript."
 image: "/images/posts/bien-ham-va-pham-vi-javascript.jpg"
