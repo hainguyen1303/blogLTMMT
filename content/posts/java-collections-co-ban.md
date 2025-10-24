@@ -2,7 +2,7 @@
 title: "Java Collections – List, Set, Map là gì và dùng khi nào"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["Java", "Lập trình"]
 categories: ["Lập trình"]
 description: "Giải thích các cấu trúc List, Set, Map trong Java Collections Framework và cách chọn đúng công cụ."
 image: "/images/posts/java-collections-co-ban.jpg"

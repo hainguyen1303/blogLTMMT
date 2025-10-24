@@ -2,7 +2,7 @@
 title: "Giới thiệu về ngôn ngữ Java – Tại sao nó vẫn quan trọng đến ngày nay"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["Java", "Lập trình"]
 categories: ["Lập trình"]
 description: "Khám phá lịch sử, ưu điểm và lý do Java vẫn là lựa chọn phổ biến cho lập trình viên."
 image: "/images/posts/gioi-thieu-ngon-ngu-java.jpg"

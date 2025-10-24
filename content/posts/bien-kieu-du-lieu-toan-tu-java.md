@@ -2,7 +2,7 @@
 title: "Biến, kiểu dữ liệu và toán tử trong Java"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["Java", "Lập trình"]
 categories: ["Lập trình"]
 description: "Tìm hiểu cách khai báo biến, lựa chọn kiểu dữ liệu và sử dụng toán tử cơ bản trong Java."
 image: "/images/posts/bien-kieu-du-lieu-toan-tu-java.jpg"

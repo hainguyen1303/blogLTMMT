@@ -2,7 +2,7 @@
 title: "So sánh Java và JavaScript – Hai ngôn ngữ khác nhau nhưng cùng tên"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["JavaScript", "Lập trình"]
 categories: ["Lập trình"]
 description: "Đối chiếu Java và JavaScript về mục tiêu thiết kế, môi trường chạy và cách sử dụng thực tế."
 image: "/images/posts/so-sanh-java-va-javascript.jpg"

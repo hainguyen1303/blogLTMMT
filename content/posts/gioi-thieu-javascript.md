@@ -2,7 +2,7 @@
 title: "Giới thiệu về JavaScript – Ngôn ngữ linh hoạt của web"
 date: 2025-10-16
 draft: false
-tags: ["Java", "JavaScript", "Lập trình"]
+tags: ["JavaScript", "Lập trình"]
 categories: ["Lập trình"]
 description: "Tổng quan về JavaScript, lịch sử phát triển và lý do ngôn ngữ này thống trị trình duyệt."
 image: "/images/posts/gioi-thieu-javascript.jpg"
